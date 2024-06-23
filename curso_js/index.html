@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Exemplo 2</title>
+</head>
+<body>
+
+    <div class="container d-flex justify-content-center align-items-center min-vh-100 cont-format">
+        <div class="card">
+            <div class="card-body bg-dark card-format">
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                    <h3 class="text-white mb-3">SIMPLE CALCULATOR</h3>
+                    <form class="mt-3 col-12" method="POST">
+                        <input type="text" id="number1" class="form-control col-12 mb-2" placeholder="Enter first number">
+                        <input type="text" id="number2" class="form-control col-12 mb-2" placeholder="Enter second number">
+                        <button type="button" class="btn btn-primary col-12 mt-3" id="showValuesBtn">Show Values</button>
+                    </form>
+                    <div class="form-check-inline mt-3">
+                        <input type="radio" class="form-check-input mr-1" name="operation" id="add" value="+">
+                        <label for="add" class="form-check-label text-white">+</label>
+                        <input type="radio" class="form-check-input mr-1 ml-1" name="operation" id="sub" value="-">
+                        <label for="add" class="form-check-label text-white">-</label>
+                        <input type="radio" class="form-check-input mr-1 ml-1" name="operation" id="multi" value="*">
+                        <label for="multi" class="form-check-label text-white">*</label>
+                        <input type="radio" class="form-check-input mr-1 ml-1" name="operation" id="divider" value="/">
+                        <label for="divider" class="form-check-label text-white">/</label>
+                  
+
+                    </div>
+                </div>
+                <div id="result" class="d-flex justify-content-center align-items-center bg-light">
+    
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+    <script src="arquivo.js"></script>
